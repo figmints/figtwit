@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Yearup: Twitter
+Plugin Name: FigTwit
 Plugin URI: http://figmints.com/
-Description: Location based twitter.
+Description: twitter.
 Author: Seth Krasnianski @ Figmints Delicious Design
 Version: 1.0
 Author Email: seth@figmints.com
@@ -10,7 +10,6 @@ Author Email: seth@figmints.com
 
 add_action( 'widgets_init', create_function( '', 'register_widget( "FigTwit_Widget" );' ) );
 
-// Yearup Dynamic Featured Story Widget
 class FigTwit_Widget extends WP_Widget {
 
   /**
