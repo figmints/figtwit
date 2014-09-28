@@ -124,7 +124,7 @@ class FigTwit_Widget extends WP_Widget {
   }
 
   private function get_tweets($ntweets, $twitteruser, $consumerkey, $consumersecret, $accesstoken, $accesstokensecret) {
-    require_once( dirname(__FILE__) . "/twitteroauth/twitteroauth/twitteroauth.php"); //Path to twitteroauth library you downloaded in step 3
+    require_once( dirname(__FILE__) . "/twitteroauth/twitteroauth/twitteroauth.php");
 
     function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
       $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
